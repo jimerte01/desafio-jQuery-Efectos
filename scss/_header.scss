@@ -1,0 +1,17 @@
+header{
+  	background-image: linear-gradient(to right, #CC24B5, #9776A7, #767AA7, #76A6A7, #1B974A, #56ED0F, #EBA42F, #F56624, #F56624, #F12A0A);
+}
+
+ .headerLogo{
+ 	display: flex;
+ 	text-align: center;
+	justify-content: space-evenly;
+ }
+
+ .titulos{
+	color: $color-principal;
+	font-size: 54px;
+	font-family: 'RocknRoll One', sans-serif;
+	text-shadow: -3px -3px 3px black, 3px -3px 3px black, -3px 3px 3px black, 3px 3px 3px black;
+	text-align: center;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> PAPELERIA MERAKI </title>
+		<link rel="shortcut icon" href="Imagenes/buho.png">
+		<link rel="stylesheet" href="css/prueba.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nova+Flat&family=Staatliches&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="Está página es de la papelería y miscelanea Merki que se dedica al comercio de útiles escolares">
+		<meta name="keywords" content="papelería, miscelánea, útiles escolares, cuadernos, detalles, juguetería, artículos de oficina, pegantes, regalos, carpetas, esferos, reglas, colores, sacapuntas, tijeras, papeles, borradores, resmas de papel, cosedoras, perforadoras, muñecos, pelotas, balones, peluches, tarjetas">
+		<meta name="author" content="Jimmy Merchán">
+		<meta property="og:locale" content="es_es">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Papelería y Miscelánea Meraki">
+		<meta property="og:description" content="página de la Papelería y Miscelánea Meraki">
+		<meta property="og:image" content="Imagenes/buho.png">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="cuadernos.js" defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-2 col-xl-2">
+						<br>
+						<a class="headerLogo" href="index.html"> <br> <img id="logo" src="Imagenes\buho.png" alt=" imagen logo" style="width:190px; height: 160px;"></a>
+					</div>	
+					
+					<div class="col-sm-12 col-md-8 col-lg-10 col-xl-10">
+						<div class="headerTitulo" id="headerTitulo">
+							<h1 class="titulos" href="index.html"> <br> PAPELERÍA Y MISCELÁNEA MERAKI </h1>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<br>	
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+						<div class="btn-group">
+							<a class="btn btn-primary" href="index.html">INICIO</a>
+						</div>	
+						<div class="btn-group">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> CATEGORÍAS </button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="cuadernos.html"> CUADERNOS </a>
+								<a class="dropdown-item" href="utiles.html"> ÚTILES ESCOLARES </a>
+								<a class="dropdown-item" href="oficina.html"> ARTÍCULOS DE OFICINA </a>
+							</div>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> DETALLES Y MÁS </button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="jugueteria.html"> JUGUETERÍA </a>
+								<a class="dropdown-item" href="detalles.html"> DETALLES </a>
+								<a class="dropdown-item" href="miscelanea.html"> MISCELÁNEA </a>
+							</div>
+						</div>
+						<div class="btn-group">	
+							<a class="btn btn-primary" href="servicios.html">SERVICIOS</a>
+						</div>	
+						<div class="btn-group">	
+							<a class="btn btn-primary" href="contacto.html">CONTACTO</a>
+						</div>	
+					</div>
+
+					<div class="col-sm-12 col-md-12 col-lg-2 col-xl-2">
+
+						<ul class="nav nav-tabs">
+							<li><a class="nav-link active" onclick="valorCarrito()" id="vcarrito"><img  class="icon" src="Imagenes/carrito.jpg" alt="carrito de compras" style="width:50px; height: 50px;"> Mi Carrito</a></li>
+						</ul>
+						
+					</div>
+
+				</div>
+			</div>	
+		</header>
+
+		<main>
+			<div class="subtitulos">
+				<h2> CUADERNOS </h2>
+			</div>
+			<div class="contenido">
+				<p> <h4> En la Papelería y Miscelánea Meraki encontrara el más completo surtido y variedad de cuadernos </h4> </p>
+			</div>
+			<br>
+			
+			
+			<div class="container">
+				<div class="row" id="productos">
+				</div>
+			</div>	
+
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-2 col-xl-2">
+						<br>
+						<a class="headerLogo" href="index.html"> <br> <img id="logo" src="Imagenes\buho.png" alt=" imagen logo" style="width:190px; height: 160px;"></a>
+					</div>
+					<div class="col-sm-12 col-md-8 col-lg-4 col-xl-4">
+						<div class="footer">
+							<br>
+							<h4> PAPELERÍA MERAKI </h4>
+							
+							<h6> Carrera 116 152-69 local 16 piso 2 </h6>
+							<h6> Bogota, Colombia </h6>
+							<h6> Telefono  6666611 </h6>
+							<h6> email: papelmeraki@gmail.com </h6>
+							<br>
+						</div>
+					</div>
+					
+					<div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+						<br>
+						<div>
+							<a class="" href="index.html">
+								<h3 class="menuInferior"> Inicio </h3>
+							</a>
+						</div>
+						<div>
+							<a class="" href="cuadernos.html">
+								<h3 class="menuInferior"> Cuadernos </h3>
+							</a>
+						</div>
+						<div>
+							<a class="" href="utiles.html">
+								<h3 class="menuInferior"> Útiles escolares </h3>
+							</a>
+						</div>
+						<div>
+							<a class="" href="oficina.html">
+								<h3 class="menuInferior"> Artículos de Oficina </h3>
+							</a>
+						</div>
+						<div>
+							<a class="" href="jugueteria.html">
+								<h3 class="menuInferior"> Juguetería </h3>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+						<br>
+						<div>
+							<a class="" href="detalles.html">
+								<h3 class="menuInferior"> Detalles </h3>
+							</a>
+						</div>
+						<div>
+							<a class="" href="miscelanea.html">
+								<h3 class="menuInferior"> Miscelánea </h3>
+							</a>
+						</div>
+						<div>
+							<a class="" href="servicios.html">
+								<h3 class="menuInferior"> Servicios </h3>
+							</a>
+						</div>
+						<div>
+							<a class="" href="contacto.html">
+								<h3 class="menuInferior"> Contacto </h3>
+							</a>
+						</div>
+						<br>
+					</div>
+				</div>
+
+			</div>
+			
+		</footer>
+
+		
+	</body>
+</html>

@@ -1,0 +1,47 @@
+h2{
+	color:$color-h2;
+	font-size: 30px;
+}
+
+main{
+ 	background: $color-fondo;
+ }
+
+ .precio{
+	color: $color-precio;
+	font-family: cursive;
+	display: flex;
+	justify-content: space-evenly;
+}   
+
+.nombreProducto{
+	color: $color-nomproducto;
+	font-family: cursive;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.subtitulos{
+	font-weight: bold;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+	background-color: $color-fondo;
+}
+
+.contenido{
+	display: flex;
+	flex-direction: columns;
+	justify-content: center; 
+	align-items: center;
+	background-color: $color-fondo;	
+}
+
+.fotos{
+ 	/*padding: center;*/
+ 	display: flex;
+	justify-content: space-evenly;
+ /*	height: 300px;
+ 	width: 100px;*/
+}
